@@ -16,7 +16,7 @@ export default function MsAppliedAI() {
     <main className="mx-auto max-w-5xl px-6 py-16">
       {/* Header */}
       <section className="mb-16">
-        <p className="mb-2 text-sm font-medium uppercase tracking-widest text-indigo-500">
+        <p className="mb-2 text-sm font-medium uppercase tracking-widest text-brand">
           Graduate Studies
         </p>
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">

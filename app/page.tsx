@@ -14,6 +14,14 @@ const projectSections = [
       "Nine projects spanning MLOps, computer vision, NLP, time-series forecasting, and agentic AI — completed during my graduate program.",
     count: "9 projects",
   },
+  {
+    href: "/cloud-resume",
+    label: "Cloud Resume Challenge",
+    sublabel: "AWS · Terraform · GitHub Actions",
+    description:
+      "Built and deployed a personal resume site on AWS — static frontend via S3 and CloudFront, with a serverless visitor counter backed by Lambda, DynamoDB, and API Gateway, provisioned with Terraform.",
+    count: "2 repos",
+  },
 ];
 
 export default function Home() {
@@ -26,7 +34,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
               Dean P. Simmer
             </h1>
-            <p className="mt-3 text-xl font-semibold text-indigo-600">
+            <p className="mt-3 text-xl font-semibold text-brand">
               VP, Engineering — Client Experiences · Rocket
             </p>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
@@ -46,7 +54,7 @@ export default function Home() {
             href="https://deanpsimmer.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700 transition-colors"
+            className="rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white hover:bg-brand-dark transition-colors"
           >
             Newsletter
           </a>
@@ -54,7 +62,7 @@ export default function Home() {
             href="https://linkedin.com/in/deanpsimmer"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-brand-border hover:text-brand transition-colors"
           >
             LinkedIn
           </a>
@@ -62,7 +70,7 @@ export default function Home() {
             href="https://github.com/mojodean"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-brand-border hover:text-brand transition-colors"
           >
             GitHub
           </a>
@@ -70,7 +78,7 @@ export default function Home() {
             href="https://mojodean.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-brand-border hover:text-brand transition-colors"
           >
             Résumé
           </a>
@@ -85,24 +93,21 @@ export default function Home() {
             <Link
               key={href}
               href={href}
-              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-indigo-400 hover:shadow-md transition-all"
+              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-brand-border hover:shadow-md transition-all"
             >
               <div className="mb-1 flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-wide text-indigo-600">
+                <span className="text-xs font-semibold uppercase tracking-wide text-brand">
                   {count}
                 </span>
-                <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
+                <span className="text-slate-400 group-hover:text-brand transition-colors">→</span>
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
+              <h3 className="text-lg font-semibold text-slate-900 group-hover:text-brand transition-colors">
                 {label}
               </h3>
               <p className="mt-1 text-sm font-medium text-slate-500">{sublabel}</p>
               <p className="mt-3 text-sm leading-relaxed text-slate-700">{description}</p>
             </Link>
           ))}
-          <div className="rounded-xl border border-dashed border-slate-200 p-6 flex items-center justify-center">
-            <p className="text-sm font-medium text-slate-400">More coming soon</p>
-          </div>
         </div>
       </section>
 

@@ -5,6 +5,7 @@ export interface Project {
   techStack: string[];
   outcome: string;
   repoUrl: string;
+  liveUrl?: string;
   featured?: boolean;
 }
 
@@ -81,5 +82,25 @@ export const msAppliedAIProjects: Project[] = [
     techStack: ["Python", "scikit-learn", "NumPy", "Pandas", "Jupyter Notebook"],
     outcome: "Random Forest model achieved 94% accuracy in detecting correlative effects of obesity from lifestyle factors.",
     repoUrl: "https://github.com/mojodean/aai-500-project-obesity-levels",
+  },
+];
+
+export const crcProjects: Project[] = [
+  {
+    title: "Cloud Resume Challenge — Frontend",
+    course: "Frontend",
+    goal: "Build and deploy a personal resume as a static website served from AWS infrastructure.",
+    techStack: ["HTML", "CSS", "JavaScript", "S3", "CloudFront", "Route53", "API Gateway"],
+    outcome: "Live resume at mojodean.com served globally via CloudFront, with a JavaScript visitor counter wired to a serverless backend.",
+    repoUrl: "https://github.com/mojodean/crc-exercise-frontend",
+    liveUrl: "https://mojodean.com",
+  },
+  {
+    title: "Cloud Resume Challenge — Infrastructure",
+    course: "Infrastructure & IaC",
+    goal: "Provision all backend cloud infrastructure using Terraform, with automated deployments via GitHub Actions.",
+    techStack: ["Terraform", "Lambda", "DynamoDB", "GitHub Actions", "HCP Terraform"],
+    outcome: "Fully automated IaC pipeline — push to main triggers Terraform plan/apply via HCP Terraform, provisioning Lambda, DynamoDB, and API Gateway with zero manual steps.",
+    repoUrl: "https://github.com/mojodean/crc-infra",
   },
 ];

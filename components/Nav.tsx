@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/ms-applied-ai", label: "M.S. Applied AI" },
+  { href: "/cloud-resume", label: "Cloud Resume" },
   { href: "https://github.com/mojodean", label: "GitHub", external: true },
   { href: "https://deanpsimmer.com", label: "Newsletter", external: true },
 ];
@@ -17,7 +18,7 @@ export default function Nav() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="text-sm font-semibold tracking-tight text-slate-900 hover:text-indigo-600 transition-colors"
+          className="text-sm font-semibold tracking-tight text-slate-900 hover:text-brand transition-colors"
         >
           Dean P. Simmer
         </Link>
@@ -39,7 +40,7 @@ export default function Nav() {
                 href={href}
                 className={`text-sm transition-colors ${
                   pathname === href
-                    ? "font-medium text-indigo-600"
+                    ? "font-semibold text-brand"
                     : "font-medium text-slate-600 hover:text-slate-900"
                 }`}
               >
