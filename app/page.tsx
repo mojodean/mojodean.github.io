@@ -24,10 +24,10 @@ export default function Home() {
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Dean P. Simmer
         </h1>
-        <p className="mt-3 text-xl font-medium text-indigo-600">
+        <p className="mt-3 text-xl font-semibold text-indigo-600">
           VP, Engineering — Client Experiences · Rocket
         </p>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-600">
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
           Engineering leader, AI/ML practitioner, and lifelong learner based in Detroit.
           I build teams and systems that ship software at scale — and I&apos;m deeply
           interested in how agentic AI changes the way we work.
@@ -37,7 +37,7 @@ export default function Home() {
             href="https://deanpsimmer.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors"
+            className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700 transition-colors"
           >
             Blog
           </a>
@@ -45,7 +45,7 @@ export default function Home() {
             href="https://linkedin.com/in/deanpsimmer"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
           >
             LinkedIn
           </a>
@@ -53,7 +53,7 @@ export default function Home() {
             href="https://github.com/mojodean"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
           >
             GitHub
           </a>
@@ -61,7 +61,7 @@ export default function Home() {
             href="https://mojodean.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-medium text-slate-700 hover:border-indigo-300 hover:text-indigo-600 transition-colors"
+            className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:border-indigo-400 hover:text-indigo-600 transition-colors"
           >
             Résumé
           </a>
@@ -76,24 +76,23 @@ export default function Home() {
             <Link
               key={href}
               href={href}
-              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-indigo-300 hover:shadow-md transition-all"
+              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-indigo-400 hover:shadow-md transition-all"
             >
               <div className="mb-1 flex items-center justify-between">
-                <span className="text-xs font-medium uppercase tracking-wide text-indigo-500">
+                <span className="text-xs font-semibold uppercase tracking-wide text-indigo-600">
                   {count}
                 </span>
-                <span className="text-slate-300 group-hover:text-indigo-400 transition-colors">→</span>
+                <span className="text-slate-400 group-hover:text-indigo-500 transition-colors">→</span>
               </div>
               <h3 className="text-lg font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
                 {label}
               </h3>
-              <p className="mt-0.5 text-xs text-slate-400">{sublabel}</p>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600">{description}</p>
+              <p className="mt-1 text-sm font-medium text-slate-500">{sublabel}</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">{description}</p>
             </Link>
           ))}
-          {/* Placeholder for future sections */}
           <div className="rounded-xl border border-dashed border-slate-200 p-6 flex items-center justify-center">
-            <p className="text-sm text-slate-400">More coming soon</p>
+            <p className="text-sm font-medium text-slate-400">More coming soon</p>
           </div>
         </div>
       </section>
@@ -102,8 +101,8 @@ export default function Home() {
       <section className="mb-20">
         <h2 className="mb-6 text-2xl font-bold tracking-tight text-slate-900">About</h2>
         <div className="rounded-xl border border-slate-200 bg-white p-8">
-          <div className="grid gap-8 sm:grid-cols-2">
-            <div className="space-y-4 text-sm leading-relaxed text-slate-600">
+          <div className="grid gap-10 sm:grid-cols-2">
+            <div className="space-y-4 text-base leading-relaxed text-slate-700">
               <p>
                 I lead the engineering teams at Rocket that power our digital client experiences —
                 from the first unauthenticated visit through qualification, application, and mortgage
@@ -112,11 +111,11 @@ export default function Home() {
               </p>
               <p>
                 I recently completed an{" "}
-                <span className="font-medium text-slate-800">
+                <span className="font-semibold text-slate-900">
                   M.S. in Applied Artificial Intelligence
                 </span>{" "}
                 at the University of San Diego, where I was recognized as an{" "}
-                <span className="font-medium text-slate-800">Alcalá 100 Honoree</span>. My academic
+                <span className="font-semibold text-slate-900">Alcalá 100 Honoree</span>. My academic
                 work spanned MLOps, computer vision, NLP, and agentic systems.
               </p>
               <p>
@@ -126,24 +125,24 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h4 className="mb-3 text-xs font-semibold uppercase tracking-wide text-slate-400">
+              <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
                 Skills &amp; Tools
               </h4>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                    className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-              <div className="mt-6 space-y-2 text-sm text-slate-600">
-                <p>
-                  <span className="font-medium text-slate-700">Education</span>
-                </p>
-                <ul className="space-y-1 text-xs text-slate-500">
+              <div className="mt-6">
+                <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500">
+                  Education
+                </h4>
+                <ul className="space-y-1.5 text-sm text-slate-700">
                   <li>M.S. Applied AI — University of San Diego</li>
                   <li>M.A. Religion — Trinity Episcopal</li>
                   <li>B.A. History — Hillsdale College</li>

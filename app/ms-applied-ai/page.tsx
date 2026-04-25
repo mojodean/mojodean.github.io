@@ -22,8 +22,8 @@ export default function MsAppliedAI() {
         <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           M.S. Applied Artificial Intelligence
         </h1>
-        <p className="mt-2 text-xl text-slate-500">University of San Diego · 2024–2026</p>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-600">
+        <p className="mt-2 text-xl font-medium text-slate-600">University of San Diego · 2024–2026</p>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-700">
           A collection of projects completed during my graduate program. The work spans the full
           ML lifecycle — from exploratory modeling and computer vision to MLOps, NLP, and agentic
           systems. I graduated as an{" "}
@@ -34,7 +34,7 @@ export default function MsAppliedAI() {
       {/* Capstone */}
       {featured.length > 0 && (
         <section className="mb-12">
-          <h2 className="mb-4 text-lg font-semibold text-slate-700">Capstone Project</h2>
+          <h2 className="mb-4 text-lg font-bold text-slate-800">Capstone Project</h2>
           <div className="grid gap-4">
             {featured.map((project) => (
               <ProjectCard key={project.repoUrl} {...project} />

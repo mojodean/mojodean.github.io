@@ -29,7 +29,7 @@ export default function Nav() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-slate-500 hover:text-slate-900 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors"
               >
                 {label}
               </a>
@@ -40,7 +40,7 @@ export default function Nav() {
                 className={`text-sm transition-colors ${
                   pathname === href
                     ? "font-medium text-indigo-600"
-                    : "text-slate-500 hover:text-slate-900"
+                    : "font-medium text-slate-600 hover:text-slate-900"
                 }`}
               >
                 {label}
