@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 const links = [
   { href: "/ms-applied-ai", label: "M.S. Applied AI" },
   { href: "https://github.com/mojodean", label: "GitHub", external: true },
-  { href: "https://deanpsimmer.com", label: "Blog", external: true },
+  { href: "https://deanpsimmer.com", label: "Newsletter", external: true },
 ];
 
 export default function Nav() {

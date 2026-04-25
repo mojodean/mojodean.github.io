@@ -39,7 +39,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold text-white hover:bg-indigo-700 transition-colors"
           >
-            Blog
+            Newsletter
           </a>
           <a
             href="https://linkedin.com/in/deanpsimmer"
