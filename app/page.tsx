@@ -34,7 +34,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
               Dean P. Simmer
             </h1>
-            <p className="mt-3 text-xl font-semibold text-brand">
+            <p className="mt-3 text-xl font-semibold text-brand-dark">
               VP, Engineering — Client Experiences · Rocket
             </p>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">

@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/ms-applied-ai", label: "M.S. Applied AI" },
-  { href: "/cloud-resume", label: "Cloud Resume" },
   { href: "https://github.com/mojodean", label: "GitHub", external: true },
   { href: "https://deanpsimmer.com", label: "Newsletter", external: true },
 ];
