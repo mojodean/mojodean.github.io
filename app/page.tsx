@@ -21,17 +21,26 @@ export default function Home() {
     <main className="mx-auto max-w-5xl px-6 py-16">
       {/* Hero */}
       <section className="mb-20">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-          Dean P. Simmer
-        </h1>
-        <p className="mt-3 text-xl font-semibold text-indigo-600">
-          VP, Engineering — Client Experiences · Rocket
-        </p>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
-          Engineering leader, AI/ML practitioner, and lifelong learner based in Detroit.
-          I build teams and systems that ship software at scale — and I&apos;m deeply
-          interested in how agentic AI changes the way we work.
-        </p>
+        <div className="flex flex-col-reverse items-start gap-8 sm:flex-row sm:items-center">
+          <div className="flex-1">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+              Dean P. Simmer
+            </h1>
+            <p className="mt-3 text-xl font-semibold text-indigo-600">
+              VP, Engineering — Client Experiences · Rocket
+            </p>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-700">
+              Engineering leader, AI/ML practitioner, and lifelong learner based in Detroit.
+              I build teams and systems that ship software at scale — and I&apos;m deeply
+              interested in how agentic AI changes the way we work.
+            </p>
+          </div>
+          <img
+            src="/dean.jpg"
+            alt="Dean P. Simmer"
+            className="h-36 w-36 rounded-full object-cover shadow-md ring-4 ring-white shrink-0"
+          />
+        </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <a
             href="https://deanpsimmer.com"
