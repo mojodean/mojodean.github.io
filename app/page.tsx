@@ -128,13 +128,21 @@ export default function Home() {
                   continuous delivery, reliability, and engineering excellence.
                 </p>
                 <p>
-                  I recently completed an{" "}
+                  I completed an{" "}
                   <span className="font-semibold text-slate-900">
                     M.S. in Applied Artificial Intelligence
                   </span>{" "}
                   at the University of San Diego, where I was recognized as an{" "}
                   <span className="font-semibold text-slate-900">Alcalá 100 Honoree</span>. My academic
                   work spanned MLOps, computer vision, NLP, and agentic systems.
+                </p>
+                <p>
+                  I&apos;m currently a{" "}
+                  <span className="font-semibold text-slate-900">
+                    PhD student in Systems Engineering
+                  </span>{" "}
+                  at Colorado State University, working with Dr. Yinshuang Xiao in the COSINE Lab on
+                  AI-integrated socio-technical systems and community resilience.
                 </p>
                 <p>
                   Before engineering leadership, I was a teacher — which shapes how I think about
@@ -161,6 +169,7 @@ export default function Home() {
                     Education
                   </h4>
                   <ul className="space-y-1.5 text-sm text-slate-700">
+                    <li>PhD Student, Systems Engineering — Colorado State University</li>
                     <li>M.S. Applied AI — University of San Diego</li>
                     <li>M.A. Religion — Trinity Episcopal</li>
                     <li>B.A. History — Hillsdale College</li>
