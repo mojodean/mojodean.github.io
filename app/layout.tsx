@@ -10,7 +10,7 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   title: "Dean P. Simmer",
-  description: "VP Engineering at Rocket. M.S. Applied AI, University of San Diego. Writing about AI, engineering, and leading well.",
+  description: "VP Engineering at Rocket. PhD student in Systems Engineering at Colorado State University; M.S. Applied AI, University of San Diego. Writing about AI, engineering, and leading well.",
 };
 
 export default function RootLayout({
