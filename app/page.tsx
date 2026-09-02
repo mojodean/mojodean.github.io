@@ -38,10 +38,13 @@ export default function Home() {
               <p className="mt-3 text-xl font-semibold text-brand">
                 VP, Engineering — Client Experiences · Rocket
               </p>
+              <p className="mt-1 text-lg font-medium text-slate-300">
+                PhD Student, Systems Engineering · Colorado State University
+              </p>
               <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
                 Engineering leader, AI/ML practitioner, and lifelong learner based in Detroit.
-                I build teams and systems that ship software at scale — and I&apos;m deeply
-                interested in how agentic AI changes the way we work.
+                I build teams and systems that ship software at scale, and my doctoral research
+                explores how AI and human connectivity shape the resilience of communities.
               </p>
             </div>
             <img
