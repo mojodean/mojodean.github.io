@@ -94,25 +94,25 @@ export default function Home() {
       <main className="mx-auto max-w-5xl px-6 py-16">
         {/* Projects */}
         <section className="mb-20">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight text-slate-900">Projects</h2>
+          <h2 className="mb-6 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Projects</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {projectSections.map(({ href, label, sublabel, description, count }) => (
               <Link
                 key={href}
                 href={href}
-                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-brand-border hover:shadow-md transition-all"
+                className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm hover:border-brand-border hover:shadow-md transition-all dark:border-slate-800 dark:bg-slate-900 dark:hover:border-brand-border"
               >
                 <div className="mb-1 flex items-center justify-between">
                   <span className="text-xs font-semibold uppercase tracking-wide text-brand">
                     {count}
                   </span>
-                  <span className="text-slate-400 group-hover:text-brand transition-colors">→</span>
+                  <span className="text-slate-400 group-hover:text-brand transition-colors dark:text-slate-500">→</span>
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-brand transition-colors">
+                <h3 className="text-lg font-semibold text-slate-900 group-hover:text-brand transition-colors dark:text-slate-100">
                   {label}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-slate-500">{sublabel}</p>
-                <p className="mt-3 text-sm leading-relaxed text-slate-700">{description}</p>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{sublabel}</p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">{description}</p>
               </Link>
             ))}
           </div>
@@ -120,10 +120,10 @@ export default function Home() {
 
         {/* About */}
         <section className="mb-20">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight text-slate-900">About</h2>
-          <div className="rounded-xl border border-slate-200 bg-white p-8">
+          <h2 className="mb-6 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">About</h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-8 dark:border-slate-800 dark:bg-slate-900">
             <div className="grid gap-10 sm:grid-cols-2">
-              <div className="space-y-4 text-base leading-relaxed text-slate-700">
+              <div className="space-y-4 text-base leading-relaxed text-slate-700 dark:text-slate-300">
                 <p>
                   I lead the engineering teams at Rocket that power our digital client experiences —
                   from the first unauthenticated visit through qualification, application, and mortgage
@@ -132,16 +132,16 @@ export default function Home() {
                 </p>
                 <p>
                   I completed an{" "}
-                  <span className="font-semibold text-slate-900">
+                  <span className="font-semibold text-slate-900 dark:text-slate-100">
                     M.S. in Applied Artificial Intelligence
                   </span>{" "}
                   at the University of San Diego, where I was recognized as an{" "}
-                  <span className="font-semibold text-slate-900">Alcalá 100 Honoree</span>. My academic
+                  <span className="font-semibold text-slate-900 dark:text-slate-100">Alcalá 100 Honoree</span>. My academic
                   work spanned MLOps, computer vision, NLP, and agentic systems.
                 </p>
                 <p>
                   I&apos;m currently a{" "}
-                  <span className="font-semibold text-slate-900">
+                  <span className="font-semibold text-slate-900 dark:text-slate-100">
                     PhD student in Systems Engineering
                   </span>{" "}
                   at Colorado State University, working with Dr. Yinshuang Xiao in the COSINE Lab on
@@ -154,24 +154,24 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500">
+                <h4 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                   Skills &amp; Tools
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700"
+                      className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-200"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
                 <div className="mt-6">
-                  <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500">
+                  <h4 className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
                     Education
                   </h4>
-                  <ul className="space-y-1.5 text-sm text-slate-700">
+                  <ul className="space-y-1.5 text-sm text-slate-700 dark:text-slate-300">
                     <li>PhD Student, Systems Engineering — Colorado State University</li>
                     <li>M.S. Applied AI — University of San Diego</li>
                     <li>M.A. Religion — Trinity Episcopal</li>

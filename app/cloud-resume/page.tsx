@@ -23,11 +23,11 @@ export default function CloudResume() {
         <p className="mb-2 text-sm font-medium uppercase tracking-widest text-brand">
           Side Project
         </p>
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100">
           Cloud Resume Challenge
         </h1>
-        <p className="mt-2 text-xl font-medium text-slate-600">AWS · Terraform · GitHub Actions</p>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-700">
+        <p className="mt-2 text-xl font-medium text-slate-600 dark:text-slate-400">AWS · Terraform · GitHub Actions</p>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-700 dark:text-slate-300">
           The{" "}
           <a
             href="https://cloudresumechallenge.dev"
@@ -45,9 +45,9 @@ export default function CloudResume() {
         {/* Stack overview */}
         <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
           {stack.map(({ label, items }) => (
-            <div key={label} className="rounded-lg border border-slate-200 bg-white p-3">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{label}</p>
-              <p className="mt-1 text-sm font-medium text-slate-700">{items}</p>
+            <div key={label} className="rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">{label}</p>
+              <p className="mt-1 text-sm font-medium text-slate-700 dark:text-slate-300">{items}</p>
             </div>
           ))}
         </div>
@@ -55,7 +55,7 @@ export default function CloudResume() {
 
       {/* Repos */}
       <section>
-        <h2 className="mb-4 text-lg font-bold text-slate-800">Repositories</h2>
+        <h2 className="mb-4 text-lg font-bold text-slate-800 dark:text-slate-200">Repositories</h2>
         <div className="grid gap-4 sm:grid-cols-2">
           {crcProjects.map((project) => (
             <ProjectCard key={project.repoUrl} {...project} />
